@@ -2,7 +2,7 @@ import { IoBookmark } from "react-icons/io5";
 import PropTypes from 'prop-types'; 
 const Blog = ({blog,handleBookmark,handleMarkAsRed})=> {
 
-const {title,cover_img,posted_date,author,author_img,hashtag,reading_time} = blog;
+const {id, title,cover_img,posted_date,author,author_img,hashtag,reading_time} = blog;
     return (
         <div className='mb-20 space-y-4'>
         <img className='w-full rounded mb-6' src={cover_img}></img>
@@ -21,15 +21,16 @@ const {title,cover_img,posted_date,author,author_img,hashtag,reading_time} = blo
              </span>
             </div>
         </div>
-             <h2>Title: {title}</h2>
+             <h1 className="text-xl font-bold">Title: {title}</h1>
              <p>{hashtag}</p>
-             <button className="text-purple-700 underline" onClick={()=>handleMarkAsRed(reading_time)}>MarkAsRed</button>
+             <button className="text-purple-700 underline" onClick={()=>handleMarkAsRed(id, reading_time)}>MarkAsRed</button>
         </div>
     );
 };
 
 Blog.PropTypes ={
     blog:PropTypes.object.isRequired
+    
    
 }
 

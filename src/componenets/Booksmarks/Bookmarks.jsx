@@ -5,14 +5,18 @@ import Bookmark from '../Bookmark/Bookmark'
 
 const Bookmarks = ({bookmarks,readingTime}) => {
   return (
-    <div className="md:w-1/3  bg-black mx-16 mt-6 text-center ">
-        <div>
-            <h2 className='text-yellow-600 text-white text-3xl'>ReadingTime: {readingTime}</h2>
-        </div>
-                 <h1 className='text-3xl text-white px-8 underline'>Bookmark:{bookmarks.length}</h1>
+    <div className='md:w-1/3 bg'>
+    <div >
+          <h2 className='text-white border border-red-600 bg-green-700 rounded w-full text-white mx-10 mb-6 p-4 text-center mt-4 text-2xl'>ReadingTime: {readingTime}</h2>
+                </div>
+
+       <div  className=" w-full bg-black mx-10 p-6 ">
+       <h1 className='text-3xl text-white underline text-center  '>Bookmark:{bookmarks.length}</h1>
                  {
-                    bookmarks.map(bookmark => <Bookmark key={bookmark.id} bookmark={bookmark}></Bookmark>)
+                    bookmarks.map((bookmark, idx) => <Bookmark key={idx} bookmark={bookmark}></Bookmark>)
                  }
+       </div>
+               
         </div>
   )
 }
@@ -22,3 +26,4 @@ Bookmarks.propTypes = {
 }
 
 export default Bookmarks
+

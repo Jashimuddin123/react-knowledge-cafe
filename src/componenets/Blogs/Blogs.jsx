@@ -13,7 +13,7 @@ const Blogs = ({handleBookmark,handleMarkAsRed}) => {
     }, [])
     return (
         <div className="md:w-2/3 ">
-            <h1>All Blogs :{blogs.length}</h1>
+            
             {
                 blogs.map(blog =><Blog
                      key={blogs.id}
