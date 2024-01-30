@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+      "cover_img": "https://i.ibb.co/JK7tjj2/cover1.jpg",
+      "title": "Beyond the Horizon",
+      "author": "Lily Twilight",
+      "author_img": "https://example.com/author1.jpg",
+      "posted_date": "June 15, 2024",
+      "reading_time": 5 ,
+      "hashtags": ["AdventureNovel", "Exploration", "Discovery"]
+    },
+    {
+        "id": 2,
+      "cover_img": "https://i.ibb.co/Q67DCB3/cover2.jpg",
+      "title": "Eternal Echoes",
+      "author": "Seraphina Silvermoon",
+      "author_img": "https://example.com/author2.jpg",
+      "posted_date": "July 3, 2024",
+      "reading_time": 8,
+      "hashtags": ["RomanticFantasy", "TimelessLove", "Heartfelt"]
+    },
+    {
+        "id": 3,
+      "cover_img": "https://i.ibb.co/0mZPycP/cover3.jpg",
+      "title": "Cipher of Shadows",
+      "author": "Raven Darkling",
+      "author_img": "https://example.com/author3.jpg",
+      "posted_date": "August 22, 2024",
+      "reading_time": 4,
+      "hashtags": ["MysticalThriller", "SecretsUnveiled", "Enigmatic"]
+    },
+    {
+        "id": 4,
+      "cover_img": "https://i.ibb.co/mG5QLpp/cover4.jpg",
+      "title": "Quantum Odyssey",
+      "author": "Nova Stellara",
+      "author_img": "https://example.com/author4.jpg",
+      "posted_date": "September 10, 2024",
+      "reading_time": 12,
+      "hashtags": ["SciFiExploration", "ParallelWorlds", "QuantumAdventure"]
+    }
+ 
+  ]
+  
