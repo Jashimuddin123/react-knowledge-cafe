@@ -1,6 +1,6 @@
 import { IoBookmark } from "react-icons/io5";
 import PropTypes from 'prop-types'; 
-const Blog = ({blog,handleAddToBookmark})=> {
+const Blog = ({blog,handleBookmark})=> {
 
 const {title,cover_img,posted_date,author,author_img,hashtag,reading_time} = blog;
     return (
@@ -17,7 +17,7 @@ const {title,cover_img,posted_date,author,author_img,hashtag,reading_time} = blo
             </div>
             <div>
              <span>{reading_time} min reed
-             <button onClick={handleAddToBookmark} className="ml-2 mt-4"><IoBookmark /></button>
+             <button onClick={() =>handleBookmark(blog)} className="ml-2 mt-4"><IoBookmark /></button>
              </span>
             </div>
         </div>
