@@ -1,10 +1,10 @@
 import { IoBookmark } from "react-icons/io5";
 import PropTypes from 'prop-types'; 
-const Blog = ({blog,handleBookmark})=> {
+const Blog = ({blog,handleBookmark,handleMarkAsRed})=> {
 
 const {title,cover_img,posted_date,author,author_img,hashtag,reading_time} = blog;
     return (
-        <div className='mb-20'>
+        <div className='mb-20 space-y-4'>
         <img className='w-full rounded mb-6' src={cover_img}></img>
 
         <div className='flex justify-between'>
@@ -23,6 +23,7 @@ const {title,cover_img,posted_date,author,author_img,hashtag,reading_time} = blo
         </div>
              <h2>Title: {title}</h2>
              <p>{hashtag}</p>
+             <button className="text-purple-700 underline" onClick={()=>handleMarkAsRed(reading_time)}>MarkAsRed</button>
         </div>
     );
 };
